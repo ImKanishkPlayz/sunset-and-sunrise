@@ -38,7 +38,8 @@ async function getBackgroundImg(){
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
-    if(hour >= 06 && hour <= 08 || hour >= 10 && hour <= 12 || hour >= 14 && hour <= 16){
+    if(hour >= 06 && hour <= 07 || hour >= 08 && hour <= 09 || hour >= 10 && hour <= 11 || hour >= 12 && hour <= 13 || hour >= 14 && hour <= 15 || hour >= 16 && hour <= 17 || hour >= 18 && hour <= 19 || hour >= 20 && hour <= 21 || hour >= 22 && hour <= 23 || hour >= 24 && hour <= 01 || hour >= 02 && hour <= 03){
+
         bg = "sunrise1.png";
     }
     else{
@@ -47,7 +48,13 @@ async function getBackgroundImg(){
         bg = "sunrise4.png";
         bg = "sunrise5.png";
         bg = "sunrise6.png";
+        bg = "sunset7.png";
+        bg = "sunset8.png";
+        bg = "sunset10.png";
+        bg = "sunset11.png";
+        bg = "sunset12.png";
     }
+
     
     
 
